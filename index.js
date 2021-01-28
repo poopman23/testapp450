@@ -114,7 +114,7 @@ io.on('connection', (socket) => {
         // //[//console.log(room.sockets)
         console.log('Room Length: ' + String(Object.keys(room.sockets).length))
         console.log('Room ID:' + String(data["room_id"]))
-        if(socket_existance != undefined && Object.keys(room.sockets).length < 25) {
+        if(socket_existance != undefined && Object.keys(room.sockets).length < 50) {
             socket.join(temp_room_id)
             socket.occupy = temp_room_id
             //[//console.log("DATA LOOK:")
